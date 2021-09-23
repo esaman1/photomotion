@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "507698497372",
+    "project_id": "photo-motion-e32d3",
+    "storage_bucket": "photo-motion-e32d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507698497372:android:a7699af3b39ffc4257e399",
+        "android_client_info": {
+          "package_name": "com.kashifahMFS.photomotion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507698497372-6os6oqa0ptssndiio5vo8sa7591mdv7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kashifahMFS.photomotion",
+            "certificate_hash": "d7bf601d22f1858d384be11d11a633ac9464b0b0"
+          }
+        },
+        {
+          "client_id": "507698497372-bkajdj6b2s6d2vcioplj07a6e0a8fnj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkvzNfIOWwQYlYt6xRfPXlt6JwHIOWHkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507698497372-bkajdj6b2s6d2vcioplj07a6e0a8fnj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
