@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Photo Motion'
+rootProject.name='Photo Motion Animation'

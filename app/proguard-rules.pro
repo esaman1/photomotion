@@ -20,9 +20,9 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 #ReactiveNetwork
--dontwarn com.github.pwittchen.reactivenetwork.library.ReactiveNetwork
--dontwarn io.reactivex.functions.Function
--dontwarn io.reactivex.functions.Action
--dontwarn io.reactivex.functions.Consumer
--dontwarn javax.servlet.ServletContextListener
--dontwarn io.reactivex.CompletableOnSubscribe
+#-dontwarn com.github.pwittchen.reactivenetwork.library.ReactiveNetwork
+#-dontwarn io.reactivex.functions.Function
+#-dontwarn io.reactivex.functions.Action
+#-dontwarn io.reactivex.functions.Consumer
+#-dontwarn javax.servlet.ServletContextListener
+#-dontwarn io.reactivex.CompletableOnSubscribe

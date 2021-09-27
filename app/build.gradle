@@ -12,20 +12,20 @@ android {
         applicationId "com.kashifahMFS.photomotion"
         minSdkVersion 24
         targetSdkVersion 30
-        versionCode 2
-        versionName "1.1"
+        versionCode 1002
+        versionName "1.002"
     }
     buildTypes {
        release {
             debuggable false
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
+            //shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
             debuggable true
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
+            //shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
            
         }
@@ -33,10 +33,15 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'key0'
+            /*keyAlias 'key0'
             keyPassword 'bombss'
             storeFile file('../keystore/PhotoMotion.jks')
-            storePassword 'bombss'
+            storePassword 'bombss'*/
+
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
         }
     }
     configurations.all {
@@ -110,5 +115,9 @@ dependencies {
 
 
     //implementation 'com.onesignal:OneSignal:4.4.0'
+
+    //debugImplementation 'com.balsikandar.android:crashreporter:1.1.0'
+
+
 
 }

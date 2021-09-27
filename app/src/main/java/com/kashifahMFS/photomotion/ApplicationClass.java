@@ -16,9 +16,6 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
-import com.kashifahMFS.photomotion.callback.OnProgressReceiver;
-import com.kashifahMFS.photomotion.utils.AppHelper;
-import com.kashifahMFS.photomotion.utils.TypefaceUtil;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -26,6 +23,9 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+import com.kashifahMFS.photomotion.callback.OnProgressReceiver;
+import com.kashifahMFS.photomotion.utils.AppHelper;
+import com.kashifahMFS.photomotion.utils.TypefaceUtil;
 
 import java.io.File;
 
@@ -37,7 +37,7 @@ public class ApplicationClass extends Application {
     Intent intent;
     boolean isFinished;
 
-    private static final String ONESIGNAL_APP_ID = "23b7405d-311d-48a9-b0e1-a096b6450321";
+    private static final String ONESIGNAL_APP_ID = "5fc7f2a0-5b6d-4b6a-b718-1d8a8fdf786c";
 
 
     public static ApplicationClass getApplication() {
@@ -67,6 +67,7 @@ public class ApplicationClass extends Application {
         new AppOpenAdsManager(this);
 
 
+        //CrashReporter.initialize(this);
 
         // Enable verbose OneSignal logging to debug issues if needed.
         /*OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
