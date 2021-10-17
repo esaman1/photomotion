@@ -74,7 +74,7 @@ public class MyAlbumActivity extends BaseActivity implements OnClickListener {
 //        tvAll.setTextColor(-1);
 //        tvFav.setTextColor(getResources().getColor(R.color.colorPrimary));
         RelativeLayout mAdView = findViewById(R.id.adView);
-        loadBannerAdsApp(mAdView);
+        //loadBannerAdsApp(mAdView);
     }
 
     public void initData() {

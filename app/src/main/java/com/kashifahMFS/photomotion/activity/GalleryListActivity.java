@@ -54,7 +54,7 @@ public class GalleryListActivity extends FragmentActivity implements OnClickList
         iv_close =  findViewById(R.id.iv_close);
 
         RelativeLayout mAdView = findViewById(R.id.adView);
-        loadBannerAdsApp(mAdView);
+        //loadBannerAdsApp(mAdView);
 
     }
 

@@ -1,5 +1,7 @@
 package com.kashifahMFS.photomotion;
 
+import static androidx.lifecycle.Lifecycle.Event.ON_START;
+
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
@@ -9,15 +11,13 @@ import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ProcessLifecycleOwner;
 
-import com.kashifahMFS.photomotion.activity.SplashActivity;
-import com.kashifahMFS.photomotion.utils.AppHelper;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.appopen.AppOpenAd;
-
-import static androidx.lifecycle.Lifecycle.Event.ON_START;
+import com.kashifahMFS.photomotion.activity.SplashActivity;
+import com.kashifahMFS.photomotion.utils.AppHelper;
 
 
 public class AppOpenAdsManager implements LifecycleObserver, Application.ActivityLifecycleCallbacks {
@@ -57,7 +57,7 @@ public class AppOpenAdsManager implements LifecycleObserver, Application.Activit
                             // Set the reference to null so isAdAvailable() returns false.
                             appOpenAd = null;
                             isShowingAd = false;
-                            fetchAd();
+                            //fetchAd();
                         }
 
                         @Override
@@ -76,7 +76,7 @@ public class AppOpenAdsManager implements LifecycleObserver, Application.Activit
 
         } else {
             Log.d(LOG_TAG, "Can not show ad.");
-            fetchAd();
+            //fetchAd();
         }
     }
 

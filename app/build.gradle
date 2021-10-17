@@ -7,13 +7,13 @@ apply plugin: 'com.google.firebase.crashlytics'
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     defaultConfig {
         applicationId "com.kashifahMFS.photomotion"
         minSdkVersion 24
-        targetSdkVersion 30
-        versionCode 1002
-        versionName "1.002"
+        targetSdkVersion 31
+        versionCode 1003
+        versionName "1.003"
     }
     buildTypes {
        release {

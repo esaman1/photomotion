@@ -331,7 +331,7 @@ public class MotionEditActivity extends BaseParentActivity {
             }
         });
         horizontalScrollView = findViewById(R.id.horizontalScrollView);
-        loadBannerAdsApp(mAdView);
+        //loadBannerAdsApp(mAdView);
         metrics = getResources().getDisplayMetrics();
         transparentLayout = (RelativeLayout) findViewById(R.id.transparentLayout);
         Toolbar toolbar = (Toolbar) findViewById(R.id.menuBar);

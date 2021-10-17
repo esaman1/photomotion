@@ -63,7 +63,7 @@ public class ApplicationClass extends Application {
         StrictMode.setVmPolicy(new Builder().build());
         TypefaceUtil.overrideFont(getApplicationContext(), "serif", "fonts/OpenSans-Regular.ttf");
         setContext(getApplicationContext());
-        loadFullScreenAdInsider();
+        //loadFullScreenAdInsider();
         new AppOpenAdsManager(this);
 
 
@@ -244,7 +244,7 @@ public class ApplicationClass extends Application {
     }
 
     public void doNextAction(final Activity act, final Intent intent, final boolean isFinished) {
-        loadFullScreenAdInsider();
+        //loadFullScreenAdInsider();
         AppHelper.setFullScreenIsInView(false);
         if (intent != null)
             act.startActivity(intent);

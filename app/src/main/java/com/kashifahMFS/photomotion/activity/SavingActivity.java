@@ -233,7 +233,7 @@ public class SavingActivity extends Activity {
         });
 
 
-        loadNative();
+        //loadNative();
     }
 
     private void loadNative() {

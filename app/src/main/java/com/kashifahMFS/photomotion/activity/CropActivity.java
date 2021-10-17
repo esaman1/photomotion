@@ -1,5 +1,7 @@
 package com.kashifahMFS.photomotion.activity;
 
+import static android.content.Intent.FLAG_RECEIVER_FOREGROUND;
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
@@ -12,8 +14,6 @@ import androidx.fragment.app.Fragment;
 import com.kashifahMFS.photomotion.R;
 import com.kashifahMFS.photomotion.fragment.MainFragment;
 import com.kashifahMFS.photomotion.utils.Share;
-
-import static android.content.Intent.FLAG_RECEIVER_FOREGROUND;
 
 public class CropActivity extends BaseParentActivity {
 
@@ -36,7 +36,7 @@ public class CropActivity extends BaseParentActivity {
         }
 
         RelativeLayout mAdView = findViewById(R.id.adView);
-        loadBannerAdsApp(mAdView);
+        //loadBannerAdsApp(mAdView);
     }
 
 

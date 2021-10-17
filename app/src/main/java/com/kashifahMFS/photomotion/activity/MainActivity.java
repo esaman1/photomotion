@@ -1,5 +1,7 @@
 package com.kashifahMFS.photomotion.activity;
 
+import static android.Manifest.permission.CAMERA;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,11 +33,6 @@ import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
 
-import com.kashifahMFS.photomotion.BuildConfig;
-import com.kashifahMFS.photomotion.ApplicationClass;
-import com.kashifahMFS.photomotion.R;
-import com.kashifahMFS.photomotion.photoAlbum.MyAlbumActivity;
-import com.kashifahMFS.photomotion.utils.Share;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
@@ -45,15 +42,17 @@ import com.google.android.gms.ads.VideoOptions;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeAdOptions;
 import com.google.android.gms.ads.nativead.NativeAdView;
+import com.kashifahMFS.photomotion.ApplicationClass;
+import com.kashifahMFS.photomotion.BuildConfig;
+import com.kashifahMFS.photomotion.R;
+import com.kashifahMFS.photomotion.photoAlbum.MyAlbumActivity;
+import com.kashifahMFS.photomotion.utils.Share;
 
 import org.apache.http.protocol.HTTP;
 import org.jetbrains.annotations.NotNull;
 
-
 import java.io.File;
 import java.io.IOException;
-
-import static android.Manifest.permission.CAMERA;
 
 
 public class MainActivity extends BaseParentActivity implements OnClickListener {
@@ -187,7 +186,7 @@ public class MainActivity extends BaseParentActivity implements OnClickListener 
         setContentView(R.layout.activity_home);
         this.moActivity = this;
         initViews();
-        loadNative();
+        //loadNative();
         initViewListeners();
         if (ApplicationClass.checkForStoragePermission(this)) {
             ApplicationClass.deleteTemp();

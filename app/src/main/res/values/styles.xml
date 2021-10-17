@@ -25,12 +25,6 @@
         <item name="android:src">@drawable/ic_menu_more</item>
     </style>
 
-    <style name="MySeekBarThemeSave" parent="AppTheme">
-        <item name="android:fontFamily">serif</item>
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="colorControlNormal">@color/seekBarControlNormal</item>
-    </style>
-
 
     <style name="MySeekBarThemeSave2" parent="AppTheme">
         <item name="android:fontFamily">serif</item>
@@ -45,13 +39,6 @@
         <item name="colorControlNormal">@color/white</item>
     </style>
 
-
-
-    <style name="AppTheme.Button.Borderless" parent="android:Theme.Holo.Light.DarkActionBar">
-        <item name="android:textColor">@color/textColorPrimary</item>
-        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
-    </style>
 
     <style name="AppTheme.AdAttribution">
         <item name="android:layout_width">wrap_content</item>
@@ -159,13 +146,7 @@
 
 
     <!--    android:forgound="?attr/selectableItemBackground"-->
-    <dimen name="margin_70">70dp</dimen>
-    <dimen name="margin_60">60dp</dimen>
     <dimen name="margin_45">45dp</dimen>
-    <dimen name="margin_2_5">2.5dp</dimen>
-    <dimen name="margin_24">24dp</dimen>
     <dimen name="margin_26">26dp</dimen>
-    <dimen name="sp12">12sp</dimen>
-    <dimen name="sp10">10sp</dimen>
     <dimen name="sp8">8sp</dimen>
 </resources>
